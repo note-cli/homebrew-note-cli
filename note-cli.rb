@@ -1,4 +1,4 @@
-class Mytool < Formula
+class note-cli < Formula
   desc "note-cli - terminal-based, cloud stored notebook system"
   homepage "https://example.com/"
   url "https://example.com/download-latest"
