@@ -15,15 +15,24 @@ class NoteCli < Formula
 
   def post_install
     config_url = "https://meta-origin-439004-d8.ue.r.appspot.com/download-note-cli-config" # URL to your config file
-    home_dir = Dir.home
-    config_dir = File.join(home_dir, ".notecli")
-    target_file = File.join(config_dir, ".noteclirc")
+    config_dir = etc/"notecli"
+    target_file = config_dir/".noteclirc"
 
     # Create the configuration directory if it doesn't exist
-    mkdir_p config_dir
+    config_dir.mkpath
 
     # Download the configuration file
     system "curl", "-o", target_file, config_url
+
+    # Verify the file was downloaded
+    unless target_file.exist?
+      odie "Failed to download the configuration file"
+    end
+
+    # Post-install message
+    ohai "Configuration file has been placed in #{target_file}"
+    ohai "If you want to use a custom configuration, move it to your home directory:"
+    ohai "mv #{target_file} ~/.noteclirc"
   end
 
   test do
