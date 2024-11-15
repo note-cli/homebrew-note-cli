@@ -1,8 +1,8 @@
 class note-cli < Formula
   desc "note-cli - terminal-based, cloud stored notebook system"
-  homepage "https://example.com/"
-  url "https://example.com/download-latest"
-  sha256 "your-sha256-checksum"
+  homepage "https://meta-origin-439004-d8.ue.r.appspot.com/"
+  url "https://meta-origin-439004-d8.ue.r.appspot.com/download-note-cli"
+  sha256 "837ff245e2ec3c4eb9912c4ed0bfbf9d66cda1e5726fd8e8dd35862e692a5a98"
   version "0.3.0" 
 
   depends_on "jansson"
