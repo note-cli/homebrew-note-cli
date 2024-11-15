@@ -14,7 +14,7 @@ class NoteCli < Formula
   end
 
   def post_install
-    config_url = "https://example.com/path/to/config/file" # URL to your config file
+    config_url = "https://meta-origin-439004-d8.ue.r.appspot.com/download-note-cli-config" # URL to your config file
     home_dir = Dir.home
     config_dir = File.join(home_dir, ".notecli")
     target_file = File.join(config_dir, ".noteclirc")
