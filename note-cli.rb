@@ -5,7 +5,8 @@ class Mytool < Formula
   sha256 "your-sha256-checksum"
 
   depends_on "jansson"
-  depends_on "another-dependency"
+  depends_on "cjson"
+  depends_on "curl"
 
   def install
     bin.install "note-cli"
