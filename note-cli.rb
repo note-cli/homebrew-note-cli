@@ -3,6 +3,7 @@ class note-cli < Formula
   homepage "https://example.com/"
   url "https://example.com/download-latest"
   sha256 "your-sha256-checksum"
+  version "0.3.0" 
 
   depends_on "jansson"
   depends_on "cjson"
