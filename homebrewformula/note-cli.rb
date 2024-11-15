@@ -31,7 +31,7 @@ class NoteCli < Formula
 
     # Post-install message
     ohai "Configuration file has been placed in #{target_file}"
-    ohai "If you want to use a custom configuration, move it to your home directory:"
+    ohai "before running note-cli, move it to your home directory:"
     ohai "mv #{target_file} ~/.noteclirc"
   end
 
