@@ -2,8 +2,8 @@ class NoteCli < Formula
   desc "note-cli - terminal-based, cloud stored notebook system"
   homepage "https://note-cli.com/"
   url "https://note-cli.com/download-note-cli"
-  sha256 "4bc7ffce6f0a33502c817284d99e2b0f78faa114888344b8f32c4805b20183d5"
-  version "0.3.10" 
+  sha256 "7d9f6041fe4e238bda1298d573e8468a19ac6e49d4de35f4e32bae6b2f940cce"
+  version "0.3.11" 
 
   depends_on "curl"
 
