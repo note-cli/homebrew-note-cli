@@ -22,6 +22,7 @@ class NoteCli < Formula
     else
       odie "Linux arm not supported yet"
     end
+  end
   
   depends_on "curl"
 
