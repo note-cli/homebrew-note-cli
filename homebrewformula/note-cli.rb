@@ -23,6 +23,9 @@ class NoteCli < Formula
   else
     odie "unsupported OS, please use MacOS or Linux."
   end
+
+  url url, using: CurlDownloadStrategy
+  sha256 sha256
   
   depends_on "curl"
 
