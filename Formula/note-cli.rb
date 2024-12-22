@@ -1,7 +1,7 @@
 class NoteCli < Formula
   desc "note-cli - terminal-based, cloud stored notebook system"
   homepage "https://note-cli.com/"
-  version "0.3.19" 
+  version "0.3.20" 
   url = ""
   sha256 = ""
   base_url = "https://note-cli.com"
@@ -9,14 +9,14 @@ class NoteCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url = "#{base_url}/download-macosarm-note-cli"
-      sha256 = "b6ac5a2ed32d1db2ad049d38facc998a2639e620985842b20b48ccd20f1a52c7"
+      sha256 = "53351e5dac7c49b3f003737e681699ae9b57fbbf488d3e29c8f5fac4a4cbd35a"
     else 
       odie "MacOS intel not supported yet"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url = "#{base_url}/download-linuxx86-note-cli"
-      sha256 = "ac77d4490d57204a5447f01960f5e88ac4c95781aa82cf9916c4a1e6aa3ed432"
+      sha256 = "9e62bafdfc4a88553a3fd86ef4898d68e73ae292c88a15ebde671a18179055b0"
     else
       odie "Linux arm not supported yet"
     end
