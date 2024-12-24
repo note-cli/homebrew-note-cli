@@ -8,15 +8,15 @@ class NoteCli < Formula
   
   if OS.mac?
     if Hardware::CPU.arm?
-      url = "#{base_url}/download-macosarm-note-cli"
-      sha256 = "53351e5dac7c49b3f003737e681699ae9b57fbbf488d3e29c8f5fac4a4cbd35a"
+      url = "#{base_url}/download-macosarm-note-cli-0.3.22"
+      sha256 = "bdf7f5de465f02c8dafb6a2b16c7688cdbfcec76889ec32e298df2a87497ba6f"
     else 
       odie "MacOS intel not supported yet"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url = "#{base_url}/download-linuxx86-note-cli"
-      sha256 = "9e62bafdfc4a88553a3fd86ef4898d68e73ae292c88a15ebde671a18179055b0"
+      url = "#{base_url}/download-linuxx86-note-cli-0.3.22"
+      sha256 = "c6a0d8baf12716f888098ec131cd5e0a35bf9b6983b977756bda992a791a2aa4"
     else
       odie "Linux arm not supported yet"
     end
