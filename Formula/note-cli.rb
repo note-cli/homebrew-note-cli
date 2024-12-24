@@ -1,7 +1,7 @@
 class NoteCli < Formula
   desc "note-cli - terminal-based, cloud stored notebook system"
   homepage "https://note-cli.com/"
-  version "0.3.20" 
+  version "0.3.22" 
   url = ""
   sha256 = ""
   base_url = "https://note-cli.com"
